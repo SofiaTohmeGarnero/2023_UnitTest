@@ -15,6 +15,7 @@ const Icon: React.FC<IconProps> = ({ iconName, className, ...rest }) => {
       xmlns="http://www.w3.org/2000/svg"
       {...rest}
       dangerouslySetInnerHTML={{ __html: path as string }}
+      role="note-icon"
     ></svg>
   );
 };

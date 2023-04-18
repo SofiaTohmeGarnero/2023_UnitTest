@@ -8,7 +8,7 @@ type ColorSelectorProps = {
 
 const colorList = ['#fffff3', '#cbe86b', '#fbd14b', '#80d4f6', '#f1bbba']
 
-export function ColorSelector({
+export default function ColorSelector({
   activeColor,
   onSaveColor,
 }: ColorSelectorProps) {
@@ -27,6 +27,7 @@ export function ColorSelector({
           data-color={color}
           style={{ backgroundColor: color }}
           onClick={handleColorClick}
+          role='data-color'
         />
       ))}
     </div>

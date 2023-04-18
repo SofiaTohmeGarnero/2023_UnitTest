@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import cx from 'classnames'
 
 import Icon from '../../components/Icon'
-import { ColorSelector } from '../../components/ColorSelector'
+import ColorSelector from '../../components/ColorSelector'
 import './styles.scss'
 
 type ToolBarState = {}

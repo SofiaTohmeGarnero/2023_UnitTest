@@ -14,7 +14,7 @@ import reducers from "./reducers";
 
 const reduxEntry = createReduxEntry();
 
-const store = configureStore({
+export const store = configureStore({
   reducer: reducers,
   middleware: [reduxEntry.middleware],
 });
