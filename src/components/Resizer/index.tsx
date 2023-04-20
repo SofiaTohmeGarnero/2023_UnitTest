@@ -24,7 +24,7 @@ const handlers = [
   ['box-bottom-left', 'bl'],
 ]
 
-export function Resizer({
+export default function Resizer({
   note,
   isSelected,
   style,
@@ -94,12 +94,14 @@ export function Resizer({
       onMouseDown={onMouseDown}
     >
       {isSelected &&
-        handlers.map(([className, direction]) => (
+        handlers.map(([className, direction], index) => (
           <span
             key={direction}
             className={className}
             data-direction={direction}
             onMouseDown={onResize}
+            role='data-direction'
+            data-testid={`${index}-${direction}`}
           />
         ))}
       {children}

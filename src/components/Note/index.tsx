@@ -1,6 +1,6 @@
 import { MouseEvent, PureComponent } from 'react'
 import { NoteProps } from '../../types/NodeType'
-import { Resizer } from '../Resizer'
+import Resizer from '../Resizer'
 import cx from 'classnames'
 import './styles.scss'
 
