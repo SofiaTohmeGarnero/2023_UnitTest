@@ -36,7 +36,7 @@ const GridCanvas: React.FC<GridProps> = () => {
   }, []);
 
   return (
-    <canvas ref={canvasRef}/>
+    <canvas ref={canvasRef} role='canvas-tag'/>
   );
 };
 
