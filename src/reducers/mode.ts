@@ -5,7 +5,7 @@ const initialState = {
   historyColor: '#cbe86b',
 }
 
-const mode = (state = initialState, action) => {
+const mode = (state = initialState, action:any) => {
   const { type, payload } = action
 
   switch (type) {
@@ -34,4 +34,4 @@ const mode = (state = initialState, action) => {
   }
 }
 
-export default mode
+export default mode;
