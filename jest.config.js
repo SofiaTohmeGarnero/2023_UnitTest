@@ -13,6 +13,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/components/**/*.ts',
     'src/components/**/*.tsx',
+    'src/constants/*.ts',
     'src/containers/**/*.ts',
     'src/containers/**/*.tsx',
     'src/helpers/*.ts',
