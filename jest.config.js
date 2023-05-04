@@ -11,6 +11,7 @@ module.exports = {
       '<rootDir>/fileTransformer.js',
   },
   collectCoverageFrom: [
+    'src/actions/*.ts',
     'src/components/**/*.ts',
     'src/components/**/*.tsx',
     'src/constants/*.ts',
