@@ -1,4 +1,4 @@
-import { noteEntry } from "./note";
+import noteEntry  from "./note";
 
 export const entryMap = {
   ...noteEntry
