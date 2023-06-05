@@ -41,6 +41,7 @@ export default class ToolBar extends PureComponent<any, ToolBarState> {
         <div
           className={cx('bar-icon', { active: !isCreateNote })}
           onMouseDown={this.toggleSelectMode}
+          role="bar-icon"
         >
           <Icon iconName="toolbar/select" className="note-icon" />
         </div>
@@ -48,6 +49,7 @@ export default class ToolBar extends PureComponent<any, ToolBarState> {
         <div
           className={cx('bar-icon', { active: isCreateNote })}
           onMouseDown={this.toggleNoteMode}
+          role="bar-icon"
         >
           <Icon iconName="toolbar/note" className="note-icon" />
         </div>
