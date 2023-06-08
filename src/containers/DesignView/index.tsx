@@ -16,4 +16,5 @@ const getAttributes = createSelector(
   }
 );
 
+//@ts-ignore
 export default connect((state) => getAttributes(state))(DesignView);

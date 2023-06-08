@@ -92,6 +92,7 @@ export default function Resizer({
       className={`resizer-box ${className}`}
       style={style}
       onMouseDown={onMouseDown}
+      role='note-container'
     >
       {isSelected &&
         handlers.map(([className, direction], index) => (
