@@ -3,12 +3,12 @@ import { NoteProps } from '../../types/NodeType'
 import { defaultSize } from '../../types/creator'
 import './styles.scss'
 
-type ResizerProps = {
+export type ResizerProps = {
   isSelected: boolean
   note: NoteProps
   style?: React.CSSProperties
   className?: string
-  children: ReactNode
+  children?: ReactNode
   onSave: (note: NoteProps) => void
   onMouseDown?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
 }

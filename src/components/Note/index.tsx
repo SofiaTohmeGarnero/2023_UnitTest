@@ -48,7 +48,10 @@ export default class Note extends PureComponent<NoteType> {
     document.addEventListener('mouseup', onMoveUp)
   }
 
-  handleDragNote = (event: MouseEvent) => {
+  /*
+  ** The script isn't used
+
+    handleDragNote = (event: MouseEvent) => {
     const { note, onSave } = this.props
     const { clientX: startX, clientY: startY } = event
     this.setState({ isDragging: true })
@@ -68,7 +71,7 @@ export default class Note extends PureComponent<NoteType> {
 
     document.addEventListener('mousemove', onMove)
     document.addEventListener('mouseup', onMoveUp)
-  }
+  } */
 
   render() {
     const { isEditing, isSelected, note, onSave } = this.props
